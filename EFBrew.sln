@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrewModel", "BrewModel\BrewModel.csproj", "{DC778572-A56A-4332-8D64-002F5835B9BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrewConsole", "BrewConsole\BrewConsole.csproj", "{996F5856-84DC-45B0-A736-BFBA3692EF8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CFFCABE7-C90B-4923-9EAC-4840DE7EA0B1}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC778572-A56A-4332-8D64-002F5835B9BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC778572-A56A-4332-8D64-002F5835B9BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC778572-A56A-4332-8D64-002F5835B9BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC778572-A56A-4332-8D64-002F5835B9BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{996F5856-84DC-45B0-A736-BFBA3692EF8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{996F5856-84DC-45B0-A736-BFBA3692EF8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{996F5856-84DC-45B0-A736-BFBA3692EF8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{996F5856-84DC-45B0-A736-BFBA3692EF8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
