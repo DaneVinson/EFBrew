@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace BrewModel
 {
     /// <summary>
-    /// Initializer that inherits DropCreateDatabaseAlways for BrewContext. Override of See method
+    /// Initializer that inherits DropCreateDatabaseAlways for BrewContext. Override of Seed method
     /// will seed the database with sample data.
     /// </summary>
     public class DropAndCreateDbInitializer<TContext> : DropCreateDatabaseAlways<TContext> where TContext : BrewContext
