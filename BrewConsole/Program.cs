@@ -14,17 +14,7 @@ namespace BrewConsole
         {
             try
             {
-                Database.SetInitializer(new MigrationInitializer());
-                using (var context = new MigrationBrewContext())
-                {
-                    var beer = context.Beers
-                                    .Include(b => b.Servings)
-                                    .Include(b => b.BeerStyle)
-                                    .Include(b => b.Brewery)
-                                    .FirstOrDefault();
-                    Console.WriteLine("{0} from {1}", beer.Name, beer.Brewery.Name);
-                    Console.WriteLine("Serving Types: {0}", String.Join(", ", beer.Servings.Select(s => s.Name).ToArray()));
-                }
+                RefreshDatabase();
             }
             catch (Exception ex)
             {
@@ -36,6 +26,16 @@ namespace BrewConsole
                 Console.WriteLine();
                 Console.WriteLine("...");
                 Console.ReadKey();
+            }
+
+        }
+
+        private static void RefreshDatabase()
+        {
+            Database.SetInitializer(new MigrationInitializer());
+            using (var context = new MigrationBrewContext())
+            {
+                var brewery = context.Breweries.FirstOrDefault();
             }
         }
     }
